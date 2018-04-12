@@ -8,12 +8,12 @@ export default class UserList extends React.Component{
     render(){
         const {users, selectedUsers} = this.props
         var paddingDiv = {
-          'padding':'20px'
+          'padding':'35px'
         }
         return (
           <div style={paddingDiv}>
             <div class="bx--data-table-v2-container" data-table-v2>
-            <h4 class="bx--data-table-v2-header">User List</h4>
+            <h4 class="bx--data-table-v2-header">User Listing</h4>
             <section class="bx--table-toolbar">
               <div class="bx--batch-actions" aria-label="Table Action Bar">
                 <div class="bx--action-list">
@@ -83,13 +83,12 @@ export default class UserList extends React.Component{
                   {/* <button class="bx--btn bx--btn--sm bx--btn--primary">Add new</button> */}
                 {/* </Link> */}
               </div>
-                <div class="row"><button class="bx--btn bx--btn--sm bx--btn--primary" onClick={()=>{this.props.editUser('activate')}}>Activate</button>
+            </section>
+            <div class="row"><
+                button class="bx--btn bx--btn--sm bx--btn--primary" onClick={()=>{this.props.editUser('activate')}}>Activate</button>
                 <button class="bx--btn bx--btn--sm bx--btn--primary" onClick={()=>{this.props.editUser('deactivate')}}>Deactivate</button>
                 <button class="bx--btn bx--btn--sm bx--btn--primary" onClick={()=>{this.props.editUser('delete')}}>Delete</button>
               </div>
-
-            </section>
-
             <table class="bx--data-table-v2 bx--data-table-v2--zebra">
               <thead>
                 <tr>

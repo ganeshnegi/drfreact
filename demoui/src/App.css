@@ -28,8 +28,12 @@
 }
 .row{
   float: left;
+  padding-bottom: 8px;
 }
-.row button{margin-right: 15px;}
+.row button{
+  margin-right: 15px;
+}
+
 
 .addUser{
   width: 50%;

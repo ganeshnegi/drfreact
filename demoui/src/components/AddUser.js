@@ -34,7 +34,7 @@ class AddUser extends Component{
         })
         .catch((error)=>{
             alert('error in data');
-            console.log(error.response.data);
+            // console.log(error.response.data);
         })
     }
 
